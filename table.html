@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.5, user-scalable=yes">
+  <title>Good tables - A11Y Champions Developer Training</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="styles/libs/bootstrap/bootstrap.processed.css">
+  <link rel="stylesheet" href="styles/style.processed.min.css">
+  <link rel="stylesheet" href="https://www.ing.nl/assets/web/ng/css/bb4d737d.the-guide-styles-responsive.min.css">
+
+</head>
+
+<body>
+
+  <header class="site-header" role="banner">
+
+    <div class="skip-links">
+      <a href="#main-menu">Skip to Main Menu</a>
+      <a href="#main-content">Skip to Main Content</a>
+    </div>
+
+    <div class="pipe-links bg-faded">
+      <div class="container pt-2 pb-1">
+        <ul class="list-inline m-0">
+          <li class="list-inline-item"><a href="http://bit.ly/a11y-dev-champs">Champ Lessons</a></li>
+          <li class="list-inline-item">Good / Bad</li>
+          <li class="list-inline-item"><a href="http://bit.ly/a11y-quiz">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="navbar navbar-toggleable-md navbar-light">
+      <nav class="container" role="navigation" aria-labelledby="main-nav">
+
+        <div class="sr-only" id="main-nav">Main Menu</div>
+
+        <a href="#" class="navbar-brand">
+          <img class="avatar-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/a11y-logo.png" alt="Accessibility Portal">
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+          <span class="sr-only">Toggle main menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="mr-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html" id="main-menu">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/media.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/request.html">Request</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/table.html" aria-current="page">Tables <span class="sr-only">(current)</span></a>
+                <ul class="pagination pagination-navbar">
+                  <li class="page-item"><a class="page-link active" href="/table.html" aria-current="page">Good <span class="sr-only">(current)</span></a></li>
+                  <li class="page-item"><a class="page-link" href="/table-bad.html">Bad</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="form-inline my-2 my-lg-0" role="search">
+            <form>
+              <label class="sr-only" for="search">Search</label>
+              <input class="form-control mr-sm-2" type="text" id="search">
+              <button class="btn btn-tertiary search-button my-2 my-sm-0" type="submit">
+                <span class="icon icon-search icon-md text-orange" aria-hidden="true"></span>
+                <span class="sr-only">Search</span>
+              </button>
+            </form>
+          </nav>
+
+        </div>
+
+      </nav>
+    </div>
+
+    <div class="brandbar">
+      <div class="container">
+        <h1 class="heading-xl">Accessible Table Page</h1>
+        <div class="sr-only" id="second-nav">Secondary Menu</div>
+        <p class="lead">Good and Bad Demonstration</p>
+      </div>
+    </div>
+
+  </header>
+
+  <main role="main" id="main-content">
+
+    <section class="full-cover bg-faded" role="region" aria-labelledby="cards-main">
+      <div class="container">
+
+        <h2>One header</h2>
+
+        <div class="card">
+          <div class="card-block">
+            <div class="table-responsive">
+
+              <table class="table table-striped">
+                <caption class="heading-m">Your portfolio</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Division</th>
+                    <th scope="col" class="text-right">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3-1-2014</td>
+                    <td>
+                      <div>BG-ING Dutch Fund</div>
+                    </td>
+                    <td>23,53%</td>
+                    <td class="text-right">€ 40.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>16-1-2014</td>
+                    <td>
+                      <div>BGZD-Blackrock New Energy Fund</div>
+                    </td>
+                    <td>35,29%</td>
+                    <td class="text-right">€ 60.000,00</td>
+                  </tr>
+                  <tr>
+                    <td>20-1-2014</td>
+                    <td>CV ANNEXUM MARMER PART 50.000</td>
+                    <td>11,76%</td>
+                    <td class="text-right">€ 20.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">Two headers</h2>
+
+        <div class="card">
+          <div class="card-block">
+            <div class="table-responsive">
+
+              <table class="table table-striped">
+                <caption>Our portfolio</caption>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Division</th>
+                    <th scope="col" class="text-right">Amount</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th scope="row" colspan="4">Total amount</th>
+                    <td class="text-right">€ 170.000,00</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <th scope="row">low</th>
+                    <td>3-1-2014</td>
+                    <td>BG-ING Dutch Fund</td>
+                    <td>23,53%</td>
+                    <td class="text-right">€ 40.000,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">mid</th>
+                    <td>16-1-2014</td>
+                    <td>BGZD-Blackrock New Energy Fund</td>
+                    <td>35,29%</td>
+                    <td class="text-right">€ 60.000,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">high</th>
+                    <td>20-1-2014</td>
+                    <td>CV ANNEXUM MARMER PART 50.000</td>
+                    <td>11,76%</td>
+                    <td class="text-right">€ 20.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">Irregular headers</h2>
+
+        <div class="card">
+          <div class="card-block">
+            <div class="table-responsive">
+
+              <table class="table table-striped">
+                <caption>Their portfolio</caption>
+                <colgroup span="2"></colgroup>
+                <colgroup>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Division</th>
+                    <th scope="col" class="text-right">Amount</th>
+                  </tr>
+                  <tr class="thead-sub">
+                    <th scope="colgroup" colspan="2">Dividends and Coupons</th>
+                    <th scope="col">Percentage <abbr class="percentage" title="tolerance">%</abbr></th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th scope="row" colspan="2">Total percentage</th>
+                    <td colspan="2">100%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="3">Total amount</th>
+                    <td class="text-right">€ 170.000,00</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <th scope="row">3-1-2014</th>
+                    <td>BG-ING Dutch Fund</td>
+                    <td>23,53%</td>
+                    <td class="text-right">€ 40.000,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">16-1-2014</th>
+                    <td>BGZD-Blackrock New Energy Fund</td>
+                    <td>35,29%</td>
+                    <td class="text-right">€ 60.000,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">20-1-2014</th>
+                    <td>CV ANNEXUM MARMER PART 50.000</td>
+                    <td>11,76%</td>
+                    <td class="text-right">€ 20.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-4">Irregular headers with headers</h2>
+
+        <div class="card">
+          <div class="card-block">
+            <div class="table-responsive">
+
+              <table class="table table-striped">
+                <caption>Combined portfolio</caption>
+                <thead>
+                  <tr>
+                    <th id="date">Date</th>
+                    <th id="description">Description</th>
+                    <th id="division">Division</th>
+                    <th id="amount" class="text-right">Amount</th>
+                  </tr>
+                  <tr class="thead-sub">
+                    <th id="dividends" colspan="2">Dividends and Coupons</th>
+                    <th id="percentage">Percentage <abbr class="percentage" title="tolerance">%</abbr></th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th colspan="2" headers="total-percentage">
+                      <div id="total-percentage">Total percentage</div>
+                    </th>
+                    <td colspan="2" headers="total-percentage">100%</td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" headers="total-amount">
+                      <div id="total-amount">Total amount</div>
+                    </th>
+                    <td headers="total-amount" class="text-right">€ 170.000,00</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <th id="date-1" headers="date dividends">3-1-2014</th>
+                    <td headers="description dividends date-1">BG-ING Dutch Fund</td>
+                    <td headers="division percentage date-1">23,53%</td>
+                    <td headers="amount date-1" class="text-right date-1">€40.000,00</td>
+                  </tr>
+                  <tr>
+                    <th id="date-2" headers="date dividends">16-1-2014</th>
+                    <td headers="description dividends date-2">BGZD-Blackrock New Energy Fund</td>
+                    <td headers="division percentage date-2">35,29%</td>
+                    <td headers="amount date-2" class="text-right">€ 60.000,00</td>
+                  </tr>
+                  <tr>
+                    <th id="date-3" headers="date dividends">20-1-2014</th>
+                    <td headers="description dividends date-3">CV ANNEXUM MARMER PART 50.000</td>
+                    <td headers="division percentage date-3">11,76%</td>
+                    <td headers="amount date-3" class="text-right">€ 20.000,00</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="full-cover site-footer bg-grey" role="contentinfo">
+    <div class="container">
+
+      <ul class="pipe-links list-inline mt-2 mb-3">
+        <li class="list-inline-item">
+          <a href="#">About A11Y</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">A11Y in the Netherlands</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Save A11Y</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Privacy en cookies</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Disclaimer</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="footer-copyright py-2">
+      <p class="m-0">&copy; 2017 Copyright</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="scripts/libs/bootstrap/bootstrap.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/videosub.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+//----------
+// Media queries
+// Cards
+// Site-containers
+// Full-cover
+// Bar
+// Tables
+//----------
+
+// Media queries
+
+@media (max-width: 992px) {
+ 
+  .container {
+    width: 100%;
+  }
+  
+}
+
+// Cards
+
+@media (min-width: 992px) {
+  
+  .col-lg-4 {
+
+    &.card-left {
+
+      .bad & {
+        position: relative;
+        left: -66.666%;
+      }
+
+    }
+
+    &.card-right {
+
+      .bad & {
+        position: relative;
+        left: 66.666%;
+      }
+
+    }
+    &.media-card-left {
+
+      .bad & {
+        position: relative;
+        left: -33.333%;
+      }
+
+    }
+
+    &.media-card-right {
+
+      .bad & {
+        position: relative;
+        left: 33.333%;
+      }
+
+    }
+
+  }
+  
+}
+
+// Site-containers
+
+.site-header {}
+
+.site-aside {}
+
+.site-footer {
+  margin-top: .25rem;
+  
+  .footer-copyright {
+    background-color: #767676;
+    border: 4px solid #ffffff;
+    border-width: 4px 0 0 0;
+    text-align: center;
+    color: white;
+    
+    p {
+      max-width: 100%;
+    }
+    
+  }
+  
+}
+
+// Full-cover
+
+.full-cover {
+  padding: 1.5rem 0;
+}
+
+.full-cover-title {
+  font-size: 1.75rem;
+  font-weight: normal;
+  text-align: center;
+  color: #767676;
+  margin: 0 0 1.5rem 0;
+}
+
+// Bar
+
+.bar {
+  background-color: #EBEBEB;
+  border: 2px solid #ffffff;
+  padding: .5rem 1.25rem;
+}
+
+// Tables
+
+.caption-default {
+  caption-side: top;
+}
+

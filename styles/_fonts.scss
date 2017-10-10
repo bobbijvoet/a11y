@@ -1,0 +1,46 @@
+//----------
+// buttons
+// tables
+//----------
+
+// ING ME REGULAR
+// --------------------------------------------------
+
+// @font-face {
+// 	font-family: 'INGMe';
+// 	src: 	url('@{fonts-path}/eot/INGMeWeb-Regular.eot');
+// 	src: 	url('@{fonts-path}/eot/INGMeWeb-Regular.eot?#iefix') format('embedded-opentype'),
+// 				url('@{fonts-path}/woff/INGMeWeb-Regular.woff') format('woff'),
+// 				url('@{fonts-path}/ttf/INGMeWeb-Regular.ttf') format('truetype'),
+// 				url('@{fonts-path}/svg/INGMeWeb-Regular.svg#INGMeWeb-Regular') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// // ING ME BOLD
+// // --------------------------------------------------
+
+// @font-face {
+// 	font-family: 'INGMe';
+// 	src: 	url('@{fonts-path}/eot/INGMeWeb-Bold.eot');
+// 	src: 	url('@{fonts-path}/eot/INGMeWeb-Bold.eot?#iefix') format('embedded-opentype'),
+// 				url('@{fonts-path}/woff/INGMeWeb-Bold.woff') format('woff'),
+// 				url('@{fonts-path}/ttf/INGMeWeb-Bold.ttf') format('truetype'),
+// 				url('@{fonts-path}/svg/INGMeWeb-Bold.svg#INGMeWeb-Bold') format('svg');
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+
+//----------
+// text uppercase
+//----------
+p.uppercase {
+    text-transform: uppercase;
+}
+
+//----------
+// tables
+//----------
+th.bold {
+  font-weight: bold;
+}

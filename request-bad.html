@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  
+  <title>Bad Request</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="styles/libs/bootstrap/bootstrap.processed.css">
+  <link rel="stylesheet" href="styles/style.processed.min.css">
+  <link rel="stylesheet" href="https://www.ing.nl/assets/web/ng/css/bb4d737d.the-guide-styles-responsive.min.css">
+  <link rel="stylesheet" href="styles/fixes.processed.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="body bad" id="totop">
+
+  <div class="site-header">
+
+    <div class="bg-faded pt-2">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="pipe-links">
+              <ul class="list-inline m-0">
+                <li class="list-inline-item"><a href="http://bit.ly/a11y-dev-champs">Champ Lessons</a></li>
+                <li class="list-inline-item">Good / Bad</li>
+                <li class="list-inline-item"><a href="http://bit.ly/a11y-quiz">Quiz</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 pipe-rechts">
+            <label class="mr-1 d-inline-block" for="language">Language</label>
+            <div class="d-inline-block p-relative">
+              <select class="mr-2" name="language" id="language">
+                <option value="english" selected>English</option>
+                <option value="nederlands">Nederlands</option>
+              </select>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="annotations01">Annotations</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="navbar navbar-toggleable-md navbar-light">
+      <div class="container">
+        
+        <a href="/index.html" class="navbar-brand">
+          <img class="avatar-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/a11y-logo.png" alt="Logo Accessibility">
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="mr-auto">
+            <div class="navbar-nav">
+              <div class="nav-item">
+                <a class="nav-link" href="/index.html" id="main-menu">Home</a>              
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="/article.html">Article</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="/media.html">Media</a>
+              </div>
+              <div class="nav-item active">
+                <a class="nav-link" href="/request.html">Request</a>
+                <div class="pagination pagination-navbar">
+                  <div class="page-item"><a class="page-link" href="/request.html">Good</a></div>
+                  <div class="page-item"><a class="page-link active" href="/request-bad.html">Bad</a></div>
+                </div>  
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="/table.html">Tables</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control form-control-search mr-2" type="text" placeholder="Type term...">
+            <button class="btn btn-tertiary search-button my-2 my-sm-0" type="submit">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/icon-search.png">
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="brandbar brandbar-a">
+      <div class="brandbar-image brandbar-image-request"></div>
+      <div class="container">
+        <header class="brandbar-header">          
+          <div class="brandbar-heading">
+            <span class="brandbar-title btn-annot-outline">Inaccessible Request Page</span>
+            <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal01">01</button>
+            <p class="brandbar-lead">Good and Bad Demonstration</p>
+            <span class="d-block mt-2 annot-relative">
+              <a href="https://dequeuniversity.com/class/html-css1/forms/" class="btn btn-primary">
+                Forms at Deque University
+              </a>
+            </span>
+          </div>        
+        </header>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="main-content">
+
+    <article class="full-cover article-main" aria-labelledby="article-main">
+      <div class="container">
+
+        <h2 id="article-main" class="sr-only">Selected for you</h2>
+
+        <div class="row">
+
+          <div class="col-md-7 col-lg-8 pr-5">
+            
+            text
+            
+          </div>
+          
+          <div class="col-md-5 col-lg-4">
+            
+            text
+
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="full-cover site-footer bg-grey">
+    <div class="container text-center">
+      
+      <div class="d-inline-block">
+        <div class="pipe-links list-inline mt-2 mb-3">
+          <div class="list-inline-item">
+            <a href="/index.html">About A11Y</a>
+          </div>
+          <div class="list-inline-item">
+            <a href="/index.html">Universal Design</a>
+          </div>
+          <div class="list-inline-item">
+            <a href="/index.html">Privacy en cookies</a>
+          </div>
+          <div class="list-inline-item">
+            <a href="/index.html">Disclaimer</a>
+          </div>
+          <div class="list-inline-item">
+            <a href="/index.html">Accessibility</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="footer-copyright py-2">
+      <p cldivs="m-0">&copy; 2017 Copyright</p>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="a11ycasts" tabindex="-1" role="dialog" aria-labelledby="a11ycastsHeading">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="a11ycastsHeading">Introducing A11ycasts! -- A11ycasts #01</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" class="modal-youtube" src="https://www.youtube.com/embed/HtTyRajRuyY?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="full-cover bg-faded annotations" role="region" aria-labelledby="annotationsSection">
+    <div class="container">
+
+      <h2 class="full-cover-title" id="annotationsSection">Annotations</h2>
+
+      <div class="modal fade modal-annot" id="annotModal01" tabindex="-1" role="dialog" aria-labelledby="annotModal01Heading">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="annotModal01Heading">01. Content does not provides a logical and hierarchical heading structure</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>The page suggests styling for headings without use of the corresponding markup within the HTML code. The order and nesting of the headings used is not correct and may confuse people.</p>
+              
+              <p>Other things to consider, in order to make headings more usable for screen reader users:</p>
+              
+              <ul>
+                <li>All pages should start by using an <code>&lt;h1&gt;</code> element.</li>
+                <li>Lists and headings used together to mark up content should be avoided</li>
+                <li>Be consistent in the use of headings</li>
+              </ul>
+
+              <div class="alert alert-info">
+                <p>
+                  <strong>Note!</strong> Improvements on the template are propagated throughout the entire website
+                </p>
+              </div>
+
+              <h4 class="heading-s">HTML Failure</h4>
+
+              <pre class="highlight">
+<code class="html">
+<!-- Starting with a H2 element instead of a H1 -->
+<h2 class="heading-xl">Inaccessible Article Page</h2>
+
+  <!-- Not using H elements for headings -->
+  <div class="heading-m">The Baseline</div>
+  <div class="heading-m">Accessibility Champions</div>
+  <div class="heading-m">Expert section</div>
+
+  <!-- Only using one or wrong kind of H element for styling purposes -->
+  <h2 class="heading-xl">...</h2>
+    <div class="heading-m">...</div>
+    ...
+</code>
+</pre>
+              <h4 class="heading-s">WCAG Success Criteria</h4>
+
+              <ul class="list-group list-group-lessons">
+                <li class="list-group-item">
+                  <div class="w-100">
+                    <a href="https://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation-programmatic">1.3.1 Info and Relationships Level A</a>
+                    <ul>
+                      <li><a href="https://www.w3.org/TR/WCAG20-TECHS/F2">F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="w-100">
+                    <a href="https://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-headings">2.4.10 Section Headings Level AAA</a>
+                    <ul>
+                      <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G141">G141: Organizing a page using headings</a></li>
+                      <li><a href="http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H69">H69: Providing heading elements at the beginning of each section of content</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-right">
+        <a href="#totop">To Top</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="scripts/libs/bootstrap/bootstrap.js"></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles/fixes.scss"],"names":[],"mappings":"AACA,KACE,WAAY","file":"fixes.processed.min.css","sourcesContent":["\nbody {\n  background: white;\n}"]}
