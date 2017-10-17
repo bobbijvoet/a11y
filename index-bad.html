@@ -19,11 +19,15 @@
 </head>
 
 <body class="body bad" id="totop">
-  <button type="button" class="btn btn-annot btn-annot-title" data-toggle="modal" data-target="#annotModal01">01</button>
-  <button type="button" class="btn btn-annot btn-annot-meta" data-toggle="modal" data-target="#annotModal02">02</button>
 
   <div class="site-header">
-    <button type="button" class="btn btn-annot btn-annot-skip" data-toggle="modal" data-target="#annotModal03">03</button>
+
+    <div class="skip-links">
+      <a href="#main-menu">Skip to Main Menu</a>
+      <a href="#main-content" class="btn-annot-outline">Skip to Main Content</a>
+    </div>
+
+
 
     <div class="bg-faded pt-2">
 
@@ -98,14 +102,14 @@
             </div>
           </div>
 
-          <div class="form-inline my-2 my-lg-0 btn-annot-outline">
+          <nav class="form-inline my-2 my-lg-0 btn-annot-outline" role="search">
             <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
             <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" placeholder="Type term...">
             <button type="button" class="btn btn-annot btn-annot-search" data-toggle="modal" data-target="#annotModal07">07</button>
             <button class="btn btn-tertiary search-button my-2 my-sm-0 ml-0 p-1" type="submit">
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/icon-search.png">
             </button>
-          </div>
+          </nav>
 
         </div>
 
