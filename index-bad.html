@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles/style.processed.min.css">
   <link rel="stylesheet" href="styles/fixes.processed.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="/cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
@@ -24,7 +24,7 @@
 
     <div class="skip-links">
       <a href="#main-menu">Skip to Main Menu</a>
-      <a href="#main-content" class="btn-annot-outline">Skip to Main Content</a>
+      <a href="#main-content">Skip to Main Content</a>
     </div>
 
 
@@ -47,11 +47,10 @@
           <div class="col-md-6 pipe-rechts">
             <label class="mr-1 d-inline-block" for="language">Language</label>
             <div class="d-inline-block p-relative">
-              <select class="mr-2 btn-annot-outline" name="language" id="language">
+              <select class="mr-2 " name="language" id="language">
                 <option value="english" selected>English</option>
-                <option value="nederlands">Nederlands</option>
+                <option value="nederlands" lang="nl">Nederlands</option>
               </select>
-              <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal05">05</button>
             </div>
             <button class="btn btn-secondary btn-sm" id="annotations01">Annotations</button>
           </div>
@@ -63,12 +62,12 @@
 
     <div class="navbar navbar-toggleable-md navbar-light">
       <nav class="container btn-annot-outline" role="navigation" aria-labelledby="main-nav">
-        <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="/index.html" class="navbar-brand">
-          <img class="avatar-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/a11y-logo.png" alt="Logo Accessibility">
+        <a href="index.html" class="navbar-brand">
+          <img class="avatar-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/a11y-logo.png"
+               alt="Homepage Accessibility">
         </a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -78,32 +77,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <div class="mr-auto">
-            <div class="navbar-nav">
-              <div class="nav-item active">
+            <ul class="navbar-nav" aria-labelledby="main-nav">
+              <li class="nav-item active">
                 <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal06">06</button>
-                <a class="nav-link btn-annot-outline" href="/index.html" id="main-menu">Home</a>
-                <div class="pagination pagination-navbar">
-                  <div class="page-item"><a class="page-link" href="/index.html">Good</a></div>
-                  <div class="page-item"><a class="page-link active" href="/index-bad.html">Bad</a></div>
-                </div>                
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="/article.html">Article</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="/media.html">Media</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="/request.html">Request</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="/table.html">Tables</a>
-              </div>
-            </div>
+                <a class="nav-link btn-annot-outline" href="index.html" aria-current="page" id="main-menu">Home <span class="sr-only">(current)</span></a>
+                <ul class="pagination pagination-navbar" aria-label="Sub navigation Main Menu">
+                  <li class="page-item"><a class="page-link active" href="index.html" aria-current="page">Good <span class="sr-only">(current)</span></a></li>
+                  <li class="page-item"><a class="page-link" href="index-bad.html">Bad</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="media.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="request.html">Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">Tables</a>
+              </li>
+            </ul>
           </div>
 
           <nav class="form-inline my-2 my-lg-0 btn-annot-outline" role="search">
-            <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
             <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" placeholder="Type term...">
             <button type="button" class="btn btn-annot btn-annot-search" data-toggle="modal" data-target="#annotModal07">07</button>
             <button class="btn btn-tertiary search-button my-2 my-sm-0 ml-0 p-1" type="submit">
@@ -140,9 +138,8 @@
 
   <main class="btn-annot-outline" role="main" id="main-content">
 
-    <div class="full-cover btn-annot-outline bg-faded">
-      <div class="container btn-annot-outline">
-        <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
+    <div class="full-cover bg-faded">
+      <div class="container">
 
         <div class="row">
 
@@ -226,10 +223,10 @@
                   <h3 class="card-title">
                     Responsibilities for:
                   </h3>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">User Experience</a></div>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">Developers</a></div>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">Editors</a></div>
-                  <div class="mb-2"><a href="/index.html" class="link-linklist">Product Owners</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">User Experience</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">Developers</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">Editors</a></div>
+                  <div class="mb-2"><a href="index.html" class="link-linklist">Product Owners</a></div>
                   <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal14">14</button>
                 </div>
               </div>
@@ -286,24 +283,24 @@
   
   <div class="full-cover btn-annot-outline site-footer bg-grey">
     <div class="container btn-annot-outline text-center">
-      <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
+
       
       <div class="d-inline-block annot-relative">
         <div class="pipe-links list-inline mt-2 mb-3 btn-annot-outline">
           <div class="list-inline-item">
-            <a href="/index.html">About A11Y</a>
+            <a href="index.html">About A11Y</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Universal Design</a>
+            <a href="index.html">Universal Design</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Privacy en cookies</a>
+            <a href="index.html">Privacy en cookies</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Disclaimer</a>
+            <a href="index.html">Disclaimer</a>
           </div>
           <div class="list-inline-item">
-            <a href="/index.html">Accessibility</a>
+            <a href="index.html">Accessibility</a>
           </div>
         </div>
         <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal14">14</button>
@@ -695,18 +692,18 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
   <div>
     <div class="active">
       <!-- No indication of current / active link -->
-      <a href="/index.html">Home</a>
+      <a href="index.html">Home</a>
       <!-- No nested relationsship present -->
       <div>
-        <div><a class="active" href="/index.html">Good</a></div>
-        <div><a href="/index-bad.html">Bad</a></div>
+        <div><a class="active" href="index.html">Good</a></div>
+        <div><a href="index-bad.html">Bad</a></div>
       </div>
     </div>
     <div>
-      <a href="/media.html">Media</a>
+      <a href="media.html">Media</a>
     </div>
     <div>
-      <a href="/table.html">Tables</a>
+      <a href="table.html">Tables</a>
     </div>
   </div>
 </div>
@@ -906,7 +903,7 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <pre class="highlight">
 <code class="html">
-<img src="/infographic-xyz.png">
+<img src="infographic-xyz.png">
 </code>
 </pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
@@ -957,7 +954,7 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <pre class="highlight">
 <code class="html">
-<img src="/experts.jpg" alt="image">
+<img src="experts.jpg" alt="image">
 </code>
 </pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
@@ -1135,7 +1132,7 @@ a:focus { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
 Go to other page:
 
 <!-- Link in code and button styling -->
-<a href="/index.html" class="btn btn-primary">Read more...</a>
+<a href="index.html" class="btn btn-primary">Read more...</a>
 
 <!-- Button in code and button styling -->
 <button type="button" class="link-primary">Read more...</button>
@@ -1143,7 +1140,7 @@ Go to other page:
 Staying on same page:
 
 <!-- Link in code and link styling -->
-<a href="/index.html" class="link-primary">Watch the video</a>
+<a href="index.html" class="link-primary">Watch the video</a>
 
 <!-- Button in code and link styling -->
 <button type="button" class="link-primary">Watch the video</button>
@@ -1192,15 +1189,15 @@ Staying on same page:
 <code class="html">
 <!-- Using divs to visually fake items -->
 
-<div class="mb-2"><a href="/index.html" class="link-linklist">User Experience</a></div>
-<div class="mb-2"><a href="/index.html" class="link-linklist">Developers</a></div>
-<div class="mb-2"><a href="/index.html" class="link-linklist">Editors</a></div>
+<div class="mb-2"><a href="index.html" class="link-linklist">User Experience</a></div>
+<div class="mb-2"><a href="index.html" class="link-linklist">Developers</a></div>
+<div class="mb-2"><a href="index.html" class="link-linklist">Editors</a></div>
 
 <!-- Applying CSS styling on non semantic elements  -->
 
 <div class="list-styling">
-  <div class="list-item"><a href="/index.html">About A11Y</a></div>
-  <div class="list-item"><a href="/index.htm">Universal Design</a></div>
+  <div class="list-item"><a href="index.html">About A11Y</a></div>
+  <div class="list-item"><a href="index.htm">Universal Design</a></div>
   <div class="list-item">...</div>
 </div>
 </code>
