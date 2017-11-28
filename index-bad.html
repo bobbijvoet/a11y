@@ -72,6 +72,7 @@
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
+          <span class="sr-only">Toggle</span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -102,10 +103,12 @@
           </div>
 
           <nav class="form-inline my-2 my-lg-0 btn-annot-outline" role="search">
-            <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" placeholder="Type term...">
-            <button type="button" class="btn btn-annot btn-annot-search" data-toggle="modal" data-target="#annotModal07">07</button>
+            <label for="search">Search</label>
+            <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" id="search"
+                   placeholder="Type term...">
             <button class="btn btn-tertiary search-button my-2 my-sm-0 ml-0 p-1" type="submit">
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/icon-search.png">
+              <span class="sr-only">Search</span>
             </button>
           </nav>
 
